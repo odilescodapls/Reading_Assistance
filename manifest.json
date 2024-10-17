@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Reading Assistant",
+  "version": "1.0",
+  "description": "A tool to highlight text when hovering over it.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "css": ["src/content.css"]
+    }
+  ]
+}
